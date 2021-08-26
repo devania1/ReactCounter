@@ -1,15 +1,11 @@
 import React from 'react';
+import CountButton from './CountButton';
 
-const App = () => {
-    const myItem = "item3";
-
-    return (
-        <ul>
-            <li>item1</li>
-            <li>item2 {myItem}</li>
-            <li>{myItem.toUpperCase()}</li>
-        </ul>
-    )
-}
+const App = () => (
+       <div>
+           <CountButton incrementBy={1} />
+           <CountButton incrementBy={500} />
+       </div>
+ )
 
 export default App;
